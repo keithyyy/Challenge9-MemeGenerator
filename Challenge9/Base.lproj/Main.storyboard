@@ -28,7 +28,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="oploadPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FXG-Qe-DFG"/>
+                                    <action selector="uploadPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OmW-Sr-2WW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAh-m4-dki">
@@ -61,7 +61,8 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jmf-Sg-CfP">
-                                <rect key="frame" x="20" y="64" width="374" height="640"/>
+                                <rect key="frame" x="20" y="108" width="374" height="596"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -84,13 +85,29 @@
                             <constraint firstItem="0Cd-Bz-aQt" firstAttribute="leading" secondItem="ZAh-m4-dki" secondAttribute="trailing" constant="10" id="zPN-sx-uBx"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bYt-ke-L1Z"/>
                     <connections>
-                        <outlet property="UploadPhoto" destination="LDf-GZ-lPp" id="iZf-dy-U8v"/>
-                        <outlet property="WriteBottomText" destination="0Cd-Bz-aQt" id="d1i-BG-8Il"/>
-                        <outlet property="WriteTopText" destination="ZAh-m4-dki" id="ksh-wC-15Z"/>
                         <outlet property="imageView" destination="Jmf-Sg-CfP" id="kAK-sA-qWt"/>
                     </connections>
                 </viewController>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hs4-db-bWO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3lQ-aI-T1f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sYF-pC-ba1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ldQ-2l-hoB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apZ-6K-VkW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>

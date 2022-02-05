@@ -32,6 +32,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func writeTopText(_ sender: Any) {
         
+        
     }
     
 
